@@ -1,5 +1,3 @@
-package com.michal;
-
 public class CheckNumber {
 
     public static void main(String[] args) {

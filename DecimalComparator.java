@@ -1,5 +1,3 @@
-package com.michal;
-
 public class DecimalComparator {
 
     public static void main(String[] args) {

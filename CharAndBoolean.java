@@ -1,5 +1,3 @@
-package com.michal;
-
 public class CharAndBoolean {
 
     public static void main(String[] args) {
