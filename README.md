@@ -6,4 +6,20 @@ Contains a bunch of exercises I've done from Tim Buchalka's :link: [Complete Jav
 :ballot_box_with_check: Variables, Datatypes and Operators  
 :ballot_box_with_check: Expressions, Statements, Code Blocks, Methods and more  
 :ballot_box_with_check: Control Flow Statements  
-:construction: OOP Part 1 - Classes, Constructors and Inheritance [in progress...]  
+:hourglass_flowing_sand: OOP Part 1 - Classes, Constructors and Inheritance [in progress...]  
+:black_square_button: OOP Part 2 - Composition, Encapsulation, and Polymorphism  
+:black_square_button: Arrays, Java inbuilt Lists, Autoboxing und Unboxing  
+:black_square_button: Inner and Abstract Classes & Interfaces  
+:black_square_button: Java Generics  
+:black_square_button: Naming Conventions and Packages; static and final keywords  
+:black_square_button: Java Collections  
+:black_square_button: JavaFX  
+:black_square_button: Basic Input & Output including java.util  
+:black_square_button: Concurrency in Java  
+:black_square_button: Lambda Expressions  
+:black_square_button: Regular Expressions  
+:black_square_button: Debugging and Unit Testing  
+:black_square_button: Databases  
+:black_square_button: Java Networking Programming  
+:black_square_button: Java 9 Module System  
+:black_square_button: Migrating Java Projects to Java 9
