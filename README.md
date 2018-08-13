@@ -6,8 +6,8 @@ Contains a bunch of exercises I've done from Tim Buchalka's :link: [Complete Jav
 :ballot_box_with_check: Variables, Datatypes and Operators  
 :ballot_box_with_check: Expressions, Statements, Code Blocks, Methods and more  
 :ballot_box_with_check: Control Flow Statements  
-:hourglass_flowing_sand: OOP Part 1 - Classes, Constructors and Inheritance [in progress...]  
-:black_square_button: OOP Part 2 - Composition, Encapsulation, and Polymorphism  
+:ballot_box_with_check: OOP Part 1 - Classes, Constructors and Inheritance [in progress...]  
+:hourglass_flowing_sand: OOP Part 2 - Composition, Encapsulation, and Polymorphism  
 :black_square_button: Arrays, Java inbuilt Lists, Autoboxing und Unboxing  
 :black_square_button: Inner and Abstract Classes & Interfaces  
 :black_square_button: Java Generics  
