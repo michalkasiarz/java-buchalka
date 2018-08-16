@@ -53,7 +53,7 @@ public class Hamburger {
     }
 
     public void showTheStandardPrice() {
-        System.out.println("The standard price of the hamburger (with no additions) is: " + getStandardPrice() + " PLN.");
+        System.out.println("The standard price of the burger (with no additions) is: " + getStandardPrice() + " PLN.");
     }
 
     public void showTheFinalPrice() {
@@ -73,21 +73,61 @@ public class Hamburger {
                     break;
             }
         } else {
-            System.out.println("The final price of the hamburger is " + getStandardPrice() + " PLN, since you've selected no additions.");
+            System.out.println("The final price of the burger is " + getStandardPrice() + " PLN, since you've selected no additions.");
 
         }
     }
+
 
     public double getStandardPrice() {
         return standardPrice;
     }
 
-    public String getMeat() {
-        return meat;
+    public int getAdditionsQuantity() {
+        return additionsQuantity;
     }
 
-    public RollType getBreadRoll() {
+    public void setAdditionsQuantity(int additionsQuantity) {
+        this.additionsQuantity = additionsQuantity;
+    }
 
-        return breadRoll;
+    public Addition getFirstAddition() {
+        return firstAddition;
+    }
+
+
+    public Addition getSecondAddition() {
+        return secondAddition;
+    }
+
+
+    public Addition getThirdAddition() {
+        return thirdAddition;
+    }
+
+
+    public Addition getFourthAddition() {
+        return fourthAddition;
+    }
+
+
+    public double getFinalPrice() {
+        return finalPrice;
+    }
+
+    public void setFirstAddition(Addition firstAddition) {
+        this.firstAddition = firstAddition;
+    }
+
+    public void setSecondAddition(Addition secondAddition) {
+        this.secondAddition = secondAddition;
+    }
+
+    public void setThirdAddition(Addition thirdAddition) {
+        this.thirdAddition = thirdAddition;
+    }
+
+    public void setFourthAddition(Addition fourthAddition) {
+        this.fourthAddition = fourthAddition;
     }
 }

@@ -1,5 +1,6 @@
 package com.michal;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,8 +18,11 @@ public class Main {
         Hamburger dubaskaHamburger = new Hamburger("chicken", white, 7.40);
         Hamburger karolHamburger = new Hamburger("chicken", white, 7.40);
 
-
-        DeluxeHamburger deluxeHamburger = new DeluxeHamburger("chicken", white, 12.50, chips, drink);
+        DeluxeHamburger deluxeHamburger = new DeluxeHamburger("chicken", white, 9.40, chips, drink);
+        HealthyBurger oneHealthyBurger = new HealthyBurger("chicken", white, 13.5);
+        HealthyBurger secondHealthyBurger = new HealthyBurger("chicken", white, 11.70);
+        HealthyBurger thirdHealthyBurger = new HealthyBurger("chicken", white, 9.30);
+        HealthyBurger fourthHealthyBurger = new HealthyBurger("chicken", white, 5.30);
 
         // burger with 4 additions
         karolHamburger.addAddition(lettuce, ketchup, tomato, drink);
@@ -35,18 +39,40 @@ public class Main {
         // burger with 1 addition
         myHamburger.addAddition(chips);
         myHamburger.showTheFinalPrice();
-
+        System.out.println();
+        // Deluxe Hamburger which comes with chips and a drink
+        deluxeHamburger.showTheFinalPrice();
+        System.out.println();
+        // Healthy burger with 1 addition;
+        oneHealthyBurger.addAddition(ketchup);
+        oneHealthyBurger.showTheStandardPrice();
+        oneHealthyBurger.showTheFinalPrice();
+        System.out.println();
+        // Healthy burger with two additions
+        secondHealthyBurger.addAddition(lettuce, potato);
+        secondHealthyBurger.showTheStandardPrice();
+        secondHealthyBurger.showTheFinalPrice();
+        System.out.println();
+        // Healthy burger with 5 additions
+        thirdHealthyBurger.addAddition(lettuce, potato, tomato, tomato, tomato);
+        thirdHealthyBurger.showTheStandardPrice();
+        thirdHealthyBurger.showTheFinalPrice();
+        System.out.println();
+        // Healthy burger with 6 additions
+        fourthHealthyBurger.addAddition(tomato, potato, tomato, ketchup, cucumber, chips);
+        fourthHealthyBurger.showTheStandardPrice();
+        fourthHealthyBurger.showTheFinalPrice();
 
 
 
 
 
         // TODO:
-        // super from sub-class - price (?)
-        // counting price for deluxe burger (?0
+        // should do some refactoring with overriding and overloading methods
 
         // DONE:
         // to deal with nullPointerException
+        // printing the value of the base, each addition and total sum of each type of burger
 
     }
 }
