@@ -20,9 +20,22 @@ public class Main {
 
         DeluxeHamburger deluxeHamburger = new DeluxeHamburger("chicken", white, 12.50, chips, drink);
 
+        // burger with 4 additions
         karolHamburger.addAddition(lettuce, ketchup, tomato, drink);
-        karolHamburger.showTheStandardPrice();
         karolHamburger.showTheFinalPrice();
+        System.out.println();
+        // burger with 3 additions
+        ivanHamburger.addAddition(tomato, potato, ketchup);
+        ivanHamburger.showTheFinalPrice();
+        System.out.println();
+        // burger with 2 additions
+        dubaskaHamburger.addAddition(cucumber, lettuce);
+        dubaskaHamburger.showTheFinalPrice();
+        System.out.println();
+        // burger with 1 addition
+        myHamburger.addAddition(chips);
+        myHamburger.showTheFinalPrice();
+
 
 
 
@@ -31,7 +44,9 @@ public class Main {
         // TODO:
         // super from sub-class - price (?)
         // counting price for deluxe burger (?0
-        // to deal with nullPointerException (casting problem?) with double value
+
+        // DONE:
+        // to deal with nullPointerException
 
     }
 }

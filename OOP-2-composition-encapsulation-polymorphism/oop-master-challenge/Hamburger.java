@@ -60,16 +60,21 @@ public class Hamburger {
         if (finalPrice != getStandardPrice()) {
             switch (additionsQuantity) {
                 case 1:
-                    System.out.println("The final price of the burger with following additions: " + firstAddition.getName() + " (" + firstAddition.getPrice() + "), is " + finalPrice + " PLN.");
+                    System.out.println("The final price of the burger (base: " + getStandardPrice() + " PLN) with following additions: " + firstAddition.getName() + " (" + firstAddition.getPrice() + "), is " + finalPrice + " PLN.");
+                    break;
                 case 2:
-                    System.out.println("The final price of the burger with following additions: " + firstAddition.getName() + " (" + firstAddition.getPrice() + "), " + secondAddition.getName() + " (" + secondAddition.getPrice() + ") is " + finalPrice + " PLN.");
+                    System.out.println("The final price of the burger (base: " + getStandardPrice() + " PLN) with following additions: " + firstAddition.getName() + " (" + firstAddition.getPrice() + "), " + secondAddition.getName() + " (" + secondAddition.getPrice() + "), is " + finalPrice + " PLN.");
+                    break;
                 case 3:
-                    System.out.println("The final price of the burger with following additions: " + firstAddition.getName() + " (" + firstAddition.getPrice() + "), " + secondAddition.getName() + " (" + secondAddition.getPrice() + "), " + thirdAddition.getName() + " (" + thirdAddition.getPrice() + "), is " + finalPrice + " PLN.");
+                    System.out.println("The final price of the burger (base: " + getStandardPrice() + " PLN) with following additions: " + firstAddition.getName() + " (" + firstAddition.getPrice() + "), " + secondAddition.getName() + " (" + secondAddition.getPrice() + "), " + thirdAddition.getName() + " (" + thirdAddition.getPrice() + "), is " + finalPrice + " PLN.");
+                    break;
                 case 4:
-                    System.out.println("The final price of the burger with following additions: " + firstAddition.getName() + " (" + firstAddition.getPrice() + "), " + secondAddition.getName() + " (" + secondAddition.getPrice() + "), " + thirdAddition.getName() + " (" + thirdAddition.getPrice() + "), " + fourthAddition.getName() + " (" + fourthAddition.getPrice() + ") is " + finalPrice + " PLN.");
+                    System.out.println("The final price of the burger (base: " + getStandardPrice() + " PLN) with following additions: " + firstAddition.getName() + " (" + firstAddition.getPrice() + "), " + secondAddition.getName() + " (" + secondAddition.getPrice() + "), " + thirdAddition.getName() + " (" + thirdAddition.getPrice() + "), " + fourthAddition.getName() + " (" + fourthAddition.getPrice() + "), is " + finalPrice + " PLN.");
+                    break;
             }
         } else {
             System.out.println("The final price of the hamburger is " + getStandardPrice() + " PLN, since you've selected no additions.");
+
         }
     }
 
@@ -82,6 +87,7 @@ public class Hamburger {
     }
 
     public RollType getBreadRoll() {
+
         return breadRoll;
     }
 }
