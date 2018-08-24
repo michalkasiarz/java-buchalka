@@ -15,6 +15,10 @@ public class Branch {
         return name;
     }
 
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
+
     public boolean newCustomer(String customerName, double initialAmount) {
         if(findCustomer(customerName) == null) {
             this.customers.add(new Customer(customerName, initialAmount));
