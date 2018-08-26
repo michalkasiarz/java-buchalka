@@ -1,7 +1,7 @@
 # java-buchalka
 Contains a bunch of exercises I've done from Tim Buchalka's :link: [Complete Java Masterclass](https://www.udemy.com/java-the-complete-java-developer-course)  
  
-:wrench: Language: Java
+:wrench: Language: Java 10. Note: Exercises are selected due to forthcoming Java 11 features (LTS). 
 
 :ballot_box_with_check: Variables, Datatypes and Operators  
 :ballot_box_with_check: Expressions, Statements, Code Blocks, Methods and more  
@@ -13,7 +13,6 @@ Contains a bunch of exercises I've done from Tim Buchalka's :link: [Complete Jav
 :black_square_button: Java Generics  
 :black_square_button: Naming Conventions and Packages; static and final keywords  
 :black_square_button: Java Collections  
-:black_square_button: JavaFX  
 :black_square_button: Basic Input & Output including java.util  
 :black_square_button: Concurrency in Java  
 :black_square_button: Lambda Expressions  
@@ -21,5 +20,3 @@ Contains a bunch of exercises I've done from Tim Buchalka's :link: [Complete Jav
 :black_square_button: Debugging and Unit Testing  
 :black_square_button: Databases  
 :black_square_button: Java Networking Programming  
-:black_square_button: Java 9 Module System  
-:black_square_button: Migrating Java Projects to Java 9
