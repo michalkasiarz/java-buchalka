@@ -1,5 +1,4 @@
 public class Contact {
-
     private String name;
     private String phoneNumber;
 
@@ -15,8 +14,4 @@ public class Contact {
     public String getPhoneNumber() {
         return phoneNumber;
     }
-
-     public static Contact createContatct(String name, String phoneNumber) {
-        return new Contact(name, phoneNumber);
-     }
 }
