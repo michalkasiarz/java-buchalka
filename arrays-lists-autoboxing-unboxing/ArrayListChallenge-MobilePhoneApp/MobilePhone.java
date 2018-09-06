@@ -10,16 +10,20 @@ public class MobilePhone {
     }
 
     public void printContacts() {
-        System.out.println("Contact list of " + myNumber + ":");
+        System.out.println("\nContact list of the phone number " + myNumber + ":\n");
         for (int i = 0; i < myContacts.size(); i++) {
             System.out.println(myContacts.get(i).getName());
         }
     }
 
     public void addContact(String name, String number) {
-        Contact contact = new Contact(name, number);
-        myContacts.add(contact);
-        System.out.println("New contact added.");
+        if (queryContact(name) == -1) {
+            Contact contact = new Contact(name, number);
+            myContacts.add(contact);
+            System.out.println("New contact added.");
+        } else {
+            System.out.println("Operation error. Contact " + name + " already on your contact list.");
+        }
     }
 
     public void updateContact(String oldName, String newName, String number) {

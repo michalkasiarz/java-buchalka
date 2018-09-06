@@ -1,43 +1,66 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
         MobilePhone myPhone = new MobilePhone("900500300");
-        myPhone.addContact("Janusz", "123123");
-        myPhone.addContact("Zachar", "6654332");
-        myPhone.addContact("Jędrzej", "74322");
 
-        System.out.println();
+        Scanner scanner = new Scanner(System.in);
+        boolean quit = false;
 
-        myPhone.printContacts();
+        while(!quit) {
 
-        System.out.println();
+            printMenu();
 
-        myPhone.updateContact("Zachar", "Piotrek", "123");
+            int choice = scanner.nextInt();
+            scanner.nextLine();
 
-        System.out.println();
 
-        myPhone.printContacts();
-
-        System.out.println();
-
-        myPhone.updateContact("Paweł", "Gaweł", "12412111");
-
-        System.out.println();
-
-        myPhone.queryContactName("Piotrek");
-
-        System.out.println();
-
-        myPhone.removeContact("Olgierd");
-
-        System.out.println();
-
-        myPhone.removeContact("Piotrek");
-
-        System.out.println();
-
-        myPhone.printContacts();
-
+            switch (choice) {
+                case 0:
+                    System.out.println("Quitting the program...");
+                    quit = true;
+                    break;
+                case 1:
+                    myPhone.printContacts();
+                    break;
+                case 2:
+                    System.out.println("New contact: ");
+                    String name = scanner.nextLine();
+                    System.out.println("Enter phone number:");
+                    String phoneNumber = scanner.nextLine();
+                    myPhone.addContact(name, phoneNumber);
+                    break;
+                case 3:
+                    System.out.println("Enter contact name to query:");
+                    myPhone.queryContactName(scanner.nextLine());
+                    break;
+                case 4:
+                    System.out.println("Enter contact name to be updated:");
+                    String oldName = scanner.nextLine();
+                    System.out.println("Enter new contact name:");
+                    String newContactName = scanner.nextLine();
+                    System.out.println("Enter new phone number:");
+                    String newPhoneNumber = scanner.nextLine();
+                    myPhone.updateContact(oldName, newContactName, newPhoneNumber);
+                    break;
+                case 5:
+                    System.out.println("Enter contact name to be removed:");
+                    myPhone.removeContact(scanner.nextLine());
+                    break;
+            }
+        }
 
     }
+
+    private static void printMenu() {
+        System.out.println("\nYour options: \t1 - to print your contact list." +
+                "\t2 - to add a new contact." +
+                "\t3 - to query a contact." +
+                "\t4 - to update a contact." +
+                "\t5 - to remove a contact." +
+                "\t0 - to quit the program.");
+    }
+
+
 }
