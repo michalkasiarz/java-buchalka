@@ -7,7 +7,6 @@ public class MobilePhone {
 
     public MobilePhone(String myNumber) {
         this.myNumber = myNumber;
-        this.myContacts = myContacts;
     }
 
     public void printContacts() {
@@ -25,21 +24,40 @@ public class MobilePhone {
 
     public void updateContact(String oldName, String newName, String number) {
         int queryResult = queryContact(oldName);
-        if(queryResult > 0) {
+        if (queryResult >= 0) {
             Contact updatedContact = new Contact(newName, number);
             myContacts.set(queryResult, updatedContact);
             System.out.println("Contact " + oldName + " has been replaced with " + newName + " (phone: " + number + ").");
         } else {
-            System.out.println("Operation error. Contact " + oldName + " was not found on your contact list, so contact was not updated.");
+            System.out.println("Operation error. Contact " + oldName + " was not found on your contact list, so was not updated.");
         }
     }
 
     public int queryContact(String contactName) {
         for (int i = 0; i < myContacts.size(); i++) {
-            if(contactName.equals(myContacts.get(i).getName())) {
+            if (contactName.equals(myContacts.get(i).getName())) {
                 return i;
             }
         }
-        return 0;
+        return -1;
+    }
+
+    public void queryContactName(String contactName) {
+        int contactIndex = queryContact(contactName);
+        if (contactIndex >= 0) {
+            System.out.println("Contact " + contactName + " was found on index " + contactIndex + " on your contact list.");
+        } else {
+            System.out.println("Contact " + contactName + " was not found on your contact list.");
+        }
+    }
+
+    public void removeContact(String contactName) {
+        int contactIndex = queryContact(contactName);
+        if (contactIndex >= 0) {
+            myContacts.remove(contactIndex);
+            System.out.println("Contact " + contactName + " successfully removed from your contact list.");
+        } else {
+            System.out.println("Contact " + contactName + " was not found on your contact list, so not deleted.");
+        }
     }
 }

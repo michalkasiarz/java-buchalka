@@ -22,6 +22,22 @@ public class Main {
 
         myPhone.updateContact("Paweł", "Gaweł", "12412111");
 
+        System.out.println();
+
+        myPhone.queryContactName("Piotrek");
+
+        System.out.println();
+
+        myPhone.removeContact("Olgierd");
+
+        System.out.println();
+
+        myPhone.removeContact("Piotrek");
+
+        System.out.println();
+
+        myPhone.printContacts();
+
 
     }
 }
