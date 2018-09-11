@@ -8,8 +8,8 @@ Contains a bunch of exercises I've done from Tim Buchalka's :link: [Complete Jav
 :ballot_box_with_check: Control Flow Statements  
 :ballot_box_with_check: OOP Part 1 - Classes, Constructors and Inheritance   
 :ballot_box_with_check: OOP Part 2 - Composition, Encapsulation, and Polymorphism  
-:hourglass_flowing_sand: Arrays, Java inbuilt Lists, Autoboxing und Unboxing [in progress...]  
-:black_square_button: Inner and Abstract Classes & Interfaces  
+:ballot_box_with_check: Arrays, Java inbuilt Lists, Autoboxing und Unboxing  
+:hourglass_flowing_sand: Inner and Abstract Classes & Interfaces  [in progress...]  
 :black_square_button: Java Generics  
 :black_square_button: Naming Conventions and Packages; static and final keywords  
 :black_square_button: Java Collections  
