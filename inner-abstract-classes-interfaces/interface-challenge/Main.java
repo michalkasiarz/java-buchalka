@@ -45,4 +45,9 @@ public class Main {
             System.out.println("Saving " + objectToSave.write().get(i) + " to storage device.");
         }
     }
+
+    public static void loadObject(ISaveable objectToLoad) {
+        ArrayList<String> values = readValues();
+        objectToLoad.read(values);
+    }
 }
