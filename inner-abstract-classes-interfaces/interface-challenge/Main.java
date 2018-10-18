@@ -4,7 +4,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        Player johnnyCash = new Player("Johnny Cash", 10, 15);
+        System.out.println(johnnyCash.toString());
+        saveObject(johnnyCash);
+
+        ISaveable werewolf = new Monster("Werewolf", 20, 80);
+        saveObject(werewolf);
+
     }
 
     public static ArrayList<String> readValues() {
@@ -17,14 +24,14 @@ public class Main {
                 "1 to enter a String\n" +
                 "0 to quit");
 
-        while(!quit) {
+        while (!quit) {
             System.out.println("Choose an option: ");
             // assigns the value of scanner to a variable "choice"
             int choice = scanner.nextInt();
             // consuming last newline character
             scanner.nextLine();
 
-            switch(choice) {
+            switch (choice) {
                 case 0:
                     quit = true;
                     break;
@@ -41,7 +48,7 @@ public class Main {
     }
 
     public static void saveObject(ISaveable objectToSave) {
-        for(int i = 0; i < objectToSave.write().size(); i++) {
+        for (int i = 0; i < objectToSave.write().size(); i++) {
             System.out.println("Saving " + objectToSave.write().get(i) + " to storage device.");
         }
     }
