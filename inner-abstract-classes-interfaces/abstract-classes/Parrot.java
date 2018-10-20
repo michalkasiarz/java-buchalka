@@ -4,10 +4,4 @@ public class Parrot extends Bird {
     public Parrot(String name) {
         super(name);
     }
-
-    // overriding fly() method
-    @Override
-    public void fly() {
-        System.out.println("Flies from one furniture to another. Bites all of 'em!");
-    }
 }

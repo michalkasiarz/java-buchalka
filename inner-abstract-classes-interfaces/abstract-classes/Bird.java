@@ -1,5 +1,5 @@
 
-public abstract class Bird extends Animal {
+public abstract class Bird extends Animal implements CanFly {
 // calling constructor from parent class using 'super' keyword
     public Bird(String name) {
         super(name);
@@ -15,8 +15,10 @@ public abstract class Bird extends Animal {
     @Override
     public void breathe() {
         System.out.println("Breathe in, breathe out.");
-
     }
-    // adding a specific method for birds: fly()
-    public abstract void fly();
+
+    @Override
+    public void fly() {
+        System.out.println(getName() + " is flapping its wings!");
+    }
 }
