@@ -13,5 +13,9 @@ public class Main {
 
         Penguin penguin = new Penguin("Emperor");
         penguin.fly();
+
+        Cat myCat = new Cat("Parys");
+        myCat.meow();
+        myCat.eat();
     }
 }
