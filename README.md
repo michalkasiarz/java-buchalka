@@ -1,7 +1,7 @@
 # java-buchalka
 Contains a bunch of exercises I've done from Tim Buchalka's :link: [Complete Java Masterclass](https://www.udemy.com/java-the-complete-java-developer-course)  
  
-:wrench: Language: Java 10. Note: Exercises are selected due to forthcoming Java 11 features (LTS). 
+:wrench: Language: Java 8 
 
 :ballot_box_with_check: Variables, Datatypes and Operators  
 :ballot_box_with_check: Expressions, Statements, Code Blocks, Methods and more  
